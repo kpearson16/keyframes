@@ -1,0 +1,146 @@
+*{
+    background-color: rgb(230, 224, 218);
+    box-sizing: border-box;
+    width: 100%vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sec1{
+    height: 50px;
+    width: 800px;
+    color: #7A5770;
+    animation: bounce 50s ease-in infinite;
+    font-size: 24px;
+}
+.sec2{
+    border: solid rgb(255, 255, 255);
+    border-width: 2px;
+    height: 600px;
+    width: 1280px;
+    display: flex;
+    display: none;
+}
+
+.sec3{
+    display: flex;
+}
+.sec3one, .sec3two, .sec3three, .sec3four {
+    justify-content: space-between;
+    align-content: center;
+    width: 20%;
+}
+.p1{
+    height: 100%;
+    animation: bounce 60s ease-in infinite;
+    
+}
+
+button{
+    animation: bounce 60s ease-in infinite;
+    background-color: #7A5770;
+    font-size: 22px;
+    color: white;
+}
+
+
+@keyframes bounce {
+    0%{
+        
+        margin-left: 0%;
+    }
+    50%{
+        
+        margin-left: 100%;
+    }
+    100%{
+        
+        margin-left: 90%;
+    }
+}
+@keyframes fadeInOut {
+    0%{
+        
+        margin-right: 0%;
+    }
+    50%{
+        
+        margin-right: 100%;
+    }
+    100%{
+        
+        margin-right: 0%;
+    }
+}
+@keyframes mymove {
+    0%{
+        
+        margin-left: 0%;
+    }
+    50%{
+        
+        margin-left: 100%;
+    }
+    100%{
+        
+        margin-left: 90%;
+    }
+}
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+    bottom: 0;
+        }
+       50% {
+    bottom: 100px;
+        }
+      }
+@keyframes up {
+    0%{
+           
+    margin-left: 0%;
+        }
+     50%{
+        
+    margin-left: 100%;
+        }
+    100%{
+    margin-left: 50%;
+        }
+    }
+.sec3{
+    display: none;
+    font-size: 44px;
+    }
+
+
+.p2{
+    animation-name: fadeInOut, moveLeft300px, bounce;
+    animation-duration: 60s;
+    height: 200px;
+    display: none;
+}
+.p3{
+    height: 200px;
+    animation: bounce 60s ease-in infinite;
+
+}
+.p4{
+    animation: mymove 60s infinite;
+    height: 200px;
+}
+        
+           
+.p5{
+    animation: up 60s infinite linear;
+    height: 200px;
+}
+        
+.p6{
+    animation: MoveUpDown 60s linear infinite;
+    height: 200px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+}
